@@ -7,19 +7,19 @@ public class PizzaMete extends Pizza {
 
 
     @Override
-    void prepare() {
+    public void prepare() {
 
         System.out.println("pizza mete prepare");
     }
 
     @Override
-    void make() {
+    public void make() {
 
         System.out.println("pizza mete make");
     }
 
     @Override
-    void complete() {
+    public void complete() {
 
         System.out.println("pizza mete complete");
     }

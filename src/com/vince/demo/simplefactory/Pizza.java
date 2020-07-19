@@ -5,10 +5,10 @@ package com.vince.demo.simplefactory;
  */
 public abstract class Pizza {
 
-    abstract void prepare();
+    public abstract void prepare();
 
-    abstract void make();
+    public abstract void make();
 
-    abstract void complete();
+    public abstract void complete();
 
 }

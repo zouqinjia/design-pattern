@@ -7,19 +7,19 @@ public class PizzaSausage extends Pizza {
 
 
     @Override
-    void prepare() {
+    public void prepare() {
 
         System.out.println("pizza sausage prepare");
     }
 
     @Override
-    void make() {
+    public void make() {
 
         System.out.println("pizza sausage make");
     }
 
     @Override
-    void complete() {
+    public void complete() {
 
         System.out.println("pizza sausage complete");
     }
