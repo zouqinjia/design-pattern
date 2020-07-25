@@ -12,7 +12,7 @@ public class DCLSingleton {
      * 但在java5之后，volatile语义加强了，被volatile修饰的对象，将禁止该对象上的读写指令重排序
      * 这样，就保证了线程B读对象时，已经初始化完全了
      */
-    private volatile static DCLSingleton dclSingleton;
+    private   static DCLSingleton dclSingleton;
 
     /**
      *  根据JLS规范，单纯的double check 代码不可靠！线程有可能得到一个不为null，但是构造不完全的对象。
