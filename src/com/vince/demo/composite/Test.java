@@ -6,6 +6,19 @@ import com.vince.demo.composite.safe.Leaf;
 
 import java.util.List;
 
+/**
+ * 组合模式，
+ * 将对象组合成属性结构以表示”部分-整体“的层次结构，使得用户对单个对象和组合对象的使用具有一致性
+ * 透明式：
+ * 把组合相关的行为放到component（抽象对象）中，使用叶子对象和分支对象具有相同的行为
+ * 1、对客户端而言不需要知道leaf对象与branch对象的存在。只需要知道component即可.所以叫透明式
+ * 2、leaf对象实现不具备的行为而在方法中抛出异常。
+ *
+ * 安全式：
+ * component中只有composite与leaf的共同行为，其它组合行为在composite中单独实现
+ * 1、客户端调用时需要知道leaf和composite对象的存在，所以失去了透明性
+ * 2、因为composite与leaf行为单独进行了分离，所以leaf不需要实现不具备的行为（空实现，抛出异常），所以具备了安全性，所以叫安全式
+ */
 public class Test {
 
     public static void main(String[] args) {
