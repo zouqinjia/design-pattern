@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>透明式组合模式</title>
+</head>
+<body>
+在该方式中，由于抽象构件声明了所有子类中的全部方法，所以客户端无须区别树叶对象和树枝对象，对客户端来说是透明的,
+但其缺点是：
+树叶构件本来没有add,remove和getSubordinate这些行为却要实现他们（抛出异常）,如果没有区分清楚叶子构件而调用这些抛出异常的方法就会导致程序报错，这样使得程序会有不安全性
+
+</body>
+</html>
