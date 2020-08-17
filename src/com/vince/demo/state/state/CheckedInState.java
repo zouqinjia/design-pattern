@@ -15,7 +15,7 @@ public class CheckedInState extends State {
     @Override
     public void bookRoom() {
 
-        System.out.println("房间已预订....");
+        System.out.println("房间已入住，不能预订....");
     }
 
     @Override
